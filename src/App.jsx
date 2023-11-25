@@ -16,7 +16,7 @@ export function App() {
         <main>
           <Post
             author="Abraão Borges"
-            content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et obcaecati amet sapiente, velit laborum inventore fuga, ab reprehenderit eum possimus itaque porro! Sapiente, nobis hic libero at quam vel ipsa."
+            content="Olá! Sou um entusiasta da tecnologia em transição de carreira, apaixonado por programação e pela arte de transformar problemas complexos em soluções criativas. Cada linha de código que escrevo é um passo em direção a um futuro onde a inovação e a resolução de desafios andam de mãos dadas. Estou ansioso para aplicar meu conhecimento e criar um impacto positivo por meio da tecnologia.👨‍💻"
           />
 
           <Post author="Anna Borges" content="Um novo post" />
