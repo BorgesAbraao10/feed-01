@@ -17,7 +17,7 @@ export function Post() {
         </div>
 
         <time title="27 de Novembro às 18:25" dateTime="2023-11-27 18:25">
-          Publicado há 1h
+          Publishead at 1h
         </time>
       </header>
       <div className={styles.content}>
