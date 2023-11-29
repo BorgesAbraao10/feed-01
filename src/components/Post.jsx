@@ -21,14 +21,14 @@ export function Post() {
         </time>
       </header>
       <div className={styles.content}>
-        <p>Fala galera!</p>
-        <p>Esse é meu primeiro projeto com React</p>
-        <p>Pode dar uma passadinha lá no meu GitHub para conferir!</p>
+        <p>Hey guys</p>
+        <p>This is my first project with React</p>
+        <p>You can go to my GitHub to check it out</p>
         <p>
           <a href="https://github.com/BorgesAbraao10">GitHub</a>
         </p>
         <p>
-          <a href="#">#Novoprojeto</a>
+          <a href="#">#New project</a>
         </p>
       </div>
      
