@@ -36,7 +36,9 @@ export function Post() {
         <strong>Leave your feed</strong>
 
         <textarea placeholder="Leave your comment" />
-        <button type="submit">Publish</button>
+        <footer>
+          <button type="submit">Publish</button>
+        </footer>
       </form>
     </article>
   );
