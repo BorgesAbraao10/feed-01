@@ -27,7 +27,9 @@ export function Post() {
         <p>This is my first project with React</p>
         <p>You can go to my GitHub to check it out</p>
         <p>
-          <a href="https://github.com/BorgesAbraao10">GitHub</a>
+          <a href="https://github.com/BorgesAbraao10" alt="Avatar-GitHub">
+            GitHub
+          </a>
         </p>
         <p>
           <a href="#">#New project</a>
@@ -37,15 +39,19 @@ export function Post() {
       <form className={styles.commentForm}>
         <strong>Leave your feedback</strong>
 
-        <textarea placeholder="Leave your comment" />
+        <textarea
+          id="commentInput"
+          name="comment"
+          placeholder="Leave your comment"
+        />
         <footer>
           <button type="submit">Publish</button>
         </footer>
       </form>
       <div className={styles.commentList}>
-        <Comment/>
-        <Comment/>
-        <Comment/>
+        <Comment />
+        <Comment />
+        <Comment />
       </div>
     </article>
   );
