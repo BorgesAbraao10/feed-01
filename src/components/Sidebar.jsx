@@ -14,6 +14,7 @@ export function Sidebar() {
         <img
           className={styles.avatar}
           src="https://github.com/BorgesAbraao10.png"
+          alt="Abraao Borges - Profile Picture"
         />
 
         <strong>Abraão Borges</strong>

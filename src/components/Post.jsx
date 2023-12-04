@@ -9,6 +9,7 @@ export function Post() {
           <img
             className={styles.avatar}
             src="https://github.com/BorgesAbraao10.png"
+            alt="Abraao Borges - Profile Picture"
           />
 
           <div className={styles.authorInfo}>
