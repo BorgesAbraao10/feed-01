@@ -7,14 +7,14 @@ export function Comment() {
     <div className={styles.comment}>
       <Avatar
         hasBorder={false}
-        src="https://github.com/BorgesAbraao10.png"
+        src="https://github.com/luizspinelli.png"
         alt="Avatar GitHub"
       />
       <div className={styles.commentBox}>
         <div className={styles.commentContent}>
           <header>
             <div className={styles.authourAndTime}>
-              <strong>Abraão Borges</strong>
+              <strong>Luiz Spinelli</strong>
               <time
                 title="27 de Novembro às 18:25"
                 dateTime="2023-11-27 18:25"
