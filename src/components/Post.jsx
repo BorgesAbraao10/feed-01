@@ -2,7 +2,8 @@ import { Avatar } from "./Avatar";
 import { Comment } from "./Comment";
 import styles from "./Post.module.css";
 
-export function Post() {
+export function Post(props) {
+  console.log(props);
   return (
     <article className={styles.post}>
       <header>
@@ -22,19 +23,7 @@ export function Post() {
           Publishead at 1h
         </time>
       </header>
-      <div className={styles.content}>
-        <p>Hey guys</p>
-        <p>This is my first project with React</p>
-        <p>You can go to my GitHub to check it out</p>
-        <p>
-          <a href="https://github.com/BorgesAbraao10" alt="Avatar-GitHub">
-            GitHub
-          </a>
-        </p>
-        <p>
-          <a href="#">#New project</a>
-        </p>
-      </div>
+      <div className={styles.content}></div>
 
       <form className={styles.commentForm}>
         <strong>Leave your feedback</strong>

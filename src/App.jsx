@@ -6,6 +6,50 @@ import styles from "./App.module.css";
 
 import "./global.css";
 
+// author: { avatar_url: "", name: "", role: "" }
+// publisheadAt: Date
+// content: String
+
+const posts = [
+  {
+    id: 1,
+    author: {
+      avatarUrl: "https://github.com/diego3g.png",
+      name: "Diego Fernandes",
+      role: "Cto @ Rocketseat",
+    },
+    content: [
+      { type: "paragraph", content: "Hey guys," },
+      { type: "paragraph", content: "This is my first project with React," },
+      {
+        type: "paragraph",
+        content: "You can go to my GitHub to check it out,",
+      },
+      { type: "link", content: "jane.desine/doctorcare" },
+    ],
+    publishedAt: new Date("2023-12-15 13:00:00"),
+  },
+  {
+    id: 2,
+    author: {
+      avatarUrl: "https://github.com/Maykbrito.png",
+      name: "Ana Borges",
+      role: "Estudante de programação",
+    },
+    content: [
+      { type: "paragraph", content: "Hey guys," },
+      { type: "paragraph", content: "This is my first project with React," },
+      {
+        type: "paragraph",
+        content: "You can go to my GitHub to check it out,",
+      },
+      { type: "link", content: "jane.desine/doctorcare" },
+    ],
+    publishedAt: new Date("2023-12-17 13:00:00"),
+  },
+];
+
+// Iteração
 
 export function App() {
   return (
@@ -15,12 +59,15 @@ export function App() {
       <div className={styles.wrapper}>
         <Sidebar />
         <main>
-          <Post
-            author="Abraão Borges"
-            content="Olá! Sou um entusiasta da tecnologia em transição de carreira, apaixonado por programação e pela arte de transformar problemas complexos em soluções criativas. Cada linha de código que escrevo é um passo em direção a um futuro onde a inovação e a resolução de desafios andam de mãos dadas. Estou ansioso para aplicar meu conhecimento e criar um impacto positivo por meio da tecnologia.👨‍💻"
-          />
-
-          <Post author="Anna Borges" content="Um novo post" />
+          {posts.map((post) => {
+            return (
+              <Post
+                author={post.author}
+                content={post.content}
+                publishedAt={post.publishedAt}
+              />
+            );
+          })}
         </main>
       </div>
     </div>
